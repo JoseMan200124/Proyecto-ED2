@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Talent Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" href="/images/Talent Hub/logo.png">
+
+  <!-- favicons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/plugin-active.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- DataTables CSS y JS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="mobile-logo">
+      <a href=""><img src="images/ds-logo.png" alt="Logo"></a>
+    </div>
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <div class="user-profile">
+        <img src="/images/Talent Hub/icons/profile.png" alt="User Image" class="user-image">
+        <h3 class="user-name">Nombre del Usuario</h3>
+        <p class="user-role">Reclutador</p>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+          <a class="smooth-scroll" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="Banner">
+    <div class="logo">
+      <img src="/images/Talent Hub/logo-removebg-preview.png" width="70%">
+    </div>
+    <div class="blacksection">
+      <h1>Universidad y<br>Talent Hub<br>Innovación Unida</h1>
+    </div>
+  </section>
+  <a href="#Services" class="mscroll"><img src="images/mouse-icon.png" alt="mouse icon"></a>
+  <section id="Services">
+    <div class="container csv-container">
+      <h2>Ingresar datos persona</h2>
+
+      <div class="csv-actions">
+        <form id="uploadForm" action="ruta-del-servidor-para-procesar-el-archivo" method="POST"
+          enctype="multipart/form-data">
+          <label for="csvFile" class="upload-button">Seleccionar archivo CSV</label>
+          <input type="file" id="csvFile" name="csvFile" accept=".csv" style="display:none;">
+          <button type="submit" class="process-button">Procesar archivo</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="tableContainer" class="table-wrapper"></div>
+
+  </section>
+
+
+  <footer id="Contact">
+    <div class="container">
+      <p>Talent Hub: Donde las ideas innovadoras <br> se transforman en soluciones reales.</p>
+      <a href="#" class="email-btn"><span><i class="fa fa-envelope-o" aria-hidden="true"></i>Hablemos!</span></a>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>Todos los derechos reservados Talent Hub</p>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="scripts/peticiones.js"></script>
+
+</html>
