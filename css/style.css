@@ -798,3 +798,60 @@ body.active .mscroll {
       transform: translateY(0);
   }
 }
+/* Contenedor de las burbujas de chat */
+.chat-container {
+  position: fixed; /* Fija la posición en la pantalla */
+  bottom: 20px; /* Separación desde el fondo */
+  right: 20px; /* Separación desde la derecha */
+  max-width: 300px; /* Ancho máximo del contenedor */
+  max-height: 60vh; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Habilita el scroll si el contenido es muy largo */
+  background-color: white; /* Fondo de las burbujas de chat */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  border-radius: 15px; /* Bordes redondeados */
+  z-index: 1000; /* Asegurarse de que esté sobre otros elementos */
+}
+
+/* Mensajes de chat individuales */
+.chat-message {
+  margin: 8px; /* Margen alrededor de cada mensaje */
+  padding: 10px; /* Espaciado interno para el texto del mensaje */
+  background-color: #f1f0f0; /* Fondo de los mensajes */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  border: 1px solid #ddd; /* Borde sutil */
+}
+
+.sender-1 {
+  background-color: #d8f3dc; /* Color para el remitente 1 */
+}
+
+.sender-2 {
+  background-color: #e9ecef; /* Color para el remitente 2 */
+}
+
+.chat-meta {
+  font-size: 0.8em; /* Tamaño de fuente para los metadatos */
+  color: #666; /* Color de texto para los metadatos */
+  text-align: right; /* Alinear a la derecha */
+  margin-top: 4px; /* Margen superior */
+}
+
+.show-chat-bubble {
+  transition: all 0.5s ease-in-out;
+  opacity: 1; /* Make sure your .show-chat-bubble increases the opacity */
+}
+
+.assign-button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.assign-button:hover {
+  background-color: #0056b3;
+}
